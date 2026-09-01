@@ -16,7 +16,8 @@ end
 end)
 
 -- The Random Color and Material Version
--- [[local player = game:GetService("Players").LocalPlayer
+--[[
+local player = game:GetService("Players").LocalPlayer
 local mouse = player:GetMouse()
 
 local Colors = {
@@ -89,4 +90,5 @@ part.CFrame = Spos * CFrame.new()
 part.Color = Colors[math.random(1, #Colors)]
 part.Material = Mat[math.random(1, #Mat)]
 part.Parent = game.Workspace
-end)]]
+end)
+]]
