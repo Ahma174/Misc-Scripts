@@ -1,33 +1,35 @@
 #include <stdio.h>
 
 int main() {
-int f;
-int s;
-char sym;
+ int fir;
+ int sec;
+ char symb;
 
-printf("Symbol? \n");
-scanf(" %c", &sym);
-
-printf("First Number? \n");
-scanf("%d", &f);
-
-printf("Second Number? \n");
-scanf("%d", &s);
-  
-  if (sym == '+') {
-    printf("Result: %d", f + s);
+ printf("Symbol? \n");
+ scanf(" %c", &symb);
+ 
+ printf("First Number? \n");
+ scanf("%d", &fir);
+ 
+ printf("Second Number? \n");
+ scanf("%d", &sec);
+ 
+ switch(symb) {
+   case '+':
+    printf("Results: %d", fir + sec);
+    break;
+   case '-':
+    printf("Results: %d", fir - sec);
+    break; 
+   case '*':
+    printf("Results: %d", fir * sec);
+    break; 
+   case '/':
+    printf("Results: %d", fir / sec);
+    break;
+    
+   default:
+    printf("Wrong Symbol!");  
   }
-  
-  if (sym == '*') {
-    printf("Result: %d", f * s);
-  }
-  
-  if (sym == '-') {
-    printf("Result: %d", f - s);
-  }
-  
-  if (sym == '/') {
-    printf("Result: %d", f / s);
-  }
- return 0; 
+ return 0;
 }
