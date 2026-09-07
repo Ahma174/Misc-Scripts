@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<body>
+  
+<p id="Results"></p>
+
+<script>
+const symb = prompt("Symbol? ");
+const fir = Number(prompt("First Number? "));
+const sec = Number(prompt("Second Number? "));
+
+if (symb === '+') {
+document.getElementById("Results").textContent = "Results: " + (fir + sec);
+}
+
+if (symb === '-') {
+document.getElementById("Results").textContent = "Results: " + (fir - sec);
+}
+  
+if (symb === '*') {
+document.getElementById("Results").textContent = "Results: " + (fir * sec);
+}
+  
+if (symb === '/') {
+document.getElementById("Results").textContent = "Results: " + (fir / sec);
+}
+</script>
+
+</body>
+</html>
