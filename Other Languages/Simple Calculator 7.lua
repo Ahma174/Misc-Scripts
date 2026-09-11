@@ -13,16 +13,15 @@ sec = tonumber(io.read())
 
 if symb == '+' then
 print("Results:", fir + sec, ";)")
-end
-
-if symb == '-' then
+  
+elseif symb == '-' then
 print("Results:", fir - sec, ";)")
-end
-
-if symb == '*' then
+  
+elseif symb == '*' then
 print("Results:", fir * sec, ";)")
-end
-
-if symb == '/' then
+  
+elseif symb == '/' then
 print("Results:", fir / sec, ";)")
+else
+  print("Invalid Symbol")
 end
