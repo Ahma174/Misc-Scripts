@@ -30,4 +30,4 @@ func main() {
 	if (symb == "/") {
 		fmt.Println("Results: ", first/second)
 	}
-} p
+}
