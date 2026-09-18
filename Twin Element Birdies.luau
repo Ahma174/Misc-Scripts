@@ -7,6 +7,7 @@
  GitHub Script Link: 
  https://raw.githubusercontent.com/Ahma174/Misc-Scripts/refs/heads/main/Twin%20Element%20Birdies.luau
 ]]
+
 -- Code
 
 if isfile("Twin Element Birdies.rbxm") then
@@ -41,11 +42,10 @@ local a = Instance.new("Animation")
 a.AnimationId = "rbxassetid://5867433601"
 a.Parent = model2.AnimationController
 
-local an
 local ani = model2.AnimationController.Animator
 
 local anim = ani:LoadAnimation(a)
-anim.Looped = true
+anim.Looped =rue
 anim:Play()
 
 task.wait(0.05)
