@@ -5,7 +5,7 @@
 
 --[[ 
  GitHub Script Link: 
- https://raw.githubusercontent.com/Ahma174/Misc-Scripts/refs/heads/main/Twin%20Element%20Birdies.luau
+not uploaded yet
 ]]
 
 -- Code
@@ -31,6 +31,8 @@ model2.Parent = game.Players.LocalPlayer.Character
 local base = model2.realBase
 base.BodyPosition:Destroy()
 base.BodyGyro:Destroy()
+base.petGui.darkElementLabel.Visible = false
+base.petGui.vortexEliteLabel.Visible = true
 
 local RunService = game:GetService("RunService")
 local humanoid = game.Players.LocalPlayer.Character.Humanoid
@@ -39,13 +41,14 @@ local rootPart = game.Players.LocalPlayer.Character.HumanoidRootPart
 -- Anim only works in ninja legends unfortunately
 
 local a = Instance.new("Animation")
+a.Name = "Idle"
 a.AnimationId = "rbxassetid://5867433601"
 a.Parent = model2.AnimationController
 
 local ani = model2.AnimationController.Animator
 
 local anim = ani:LoadAnimation(a)
-anim.Looped =rue
+anim.Looped = true
 anim:Play()
 
 task.wait(0.05)
