@@ -5,7 +5,7 @@
 
 --[[ 
  GitHub Script Link: 
-not uploaded yet
+ https://raw.githubusercontent.com/Ahma174/Misc-Scripts/refs/heads/main/Twin%20Element%20Birdies.luau
 ]]
 -- Code
 
