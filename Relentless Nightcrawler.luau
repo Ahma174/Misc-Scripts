@@ -284,10 +284,18 @@ local groundOffset = 1.5
 
 local rayParams = RaycastParams.new()
 rayParams.FilterType = Enum.RaycastFilterType.Exclude
-rayParams.FilterDescendantsInstances = {
+local ignore = {
 	game.Players.LocalPlayer.Character,
-	model2
+	model2,
 }
+
+for _, player in ipairs(game.Players:GetPlayers()) do
+	if player.Character then
+		table.insert(ignore, player.Character)
+	end
+end
+
+rayParams.FilterDescendantsInstances = ignore
 
 RunService.RenderStepped:Connect(function()
 	local targetCFrame = rootPart.CFrame * flyingOffset
