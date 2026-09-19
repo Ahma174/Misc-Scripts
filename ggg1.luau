@@ -893,7 +893,7 @@ bodyGyro.P = 20000
 bodyGyro.D = 1000
 bodyGyro.Parent = base
 
-local flyingOffset = CFrame.new(-5, -0.6, -3)
+local flyingOffset = CFrame.new(5, -0.6, 3)
 
 RunService.RenderStepped:Connect(function()
 	local targetCFrame = rootPart.CFrame * flyingOffset
