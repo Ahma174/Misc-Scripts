@@ -279,52 +279,11 @@ bodyGyro.P = 20000
 bodyGyro.D = 1000
 bodyGyro.Parent = base
 
-local flyingOffset = CFrame.new(5, 0, -3)
-local groundOffset = 1.5
-
-local rayParams = RaycastParams.new()
-rayParams.FilterType = Enum.RaycastFilterType.Exclude
-local ignore = {
-	game.Players.LocalPlayer.Character,
-	model2,
-}
-
-for _, player in ipairs(game.Players:GetPlayers()) do
-	if player.Character then
-		table.insert(ignore, player.Character)
-	end
-end
-
-rayParams.FilterDescendantsInstances = ignore
+local flyingOffset = CFrame.new(5, -0.6, -3)
 
 RunService.RenderStepped:Connect(function()
 	local targetCFrame = rootPart.CFrame * flyingOffset
-	local targetPos = targetCFrame.Position
-
-	local state = humanoid:GetState()
-
-	if state == Enum.HumanoidStateType.Running
-		or state == Enum.HumanoidStateType.RunningNoPhysics then
-
-		local rayOrigin = Vector3.new(
-			targetPos.X,
-			targetPos.Y + 10,
-			targetPos.Z
-		)
-
-		local rayDirection = Vector3.new(0, -100, 0)
-		local result = workspace:Raycast(rayOrigin, rayDirection, rayParams)
-
-		if result then
-			targetPos = Vector3.new(
-				targetPos.X,
-				result.Position.Y + groundOffset,
-				targetPos.Z
-			)
-		end
-	end
-
-	bodyPos.Position = targetPos
+	bodyPos.Position = targetCFrame.Position
 
 	local velocity = rootPart.AssemblyLinearVelocity
 	local flatVelocity = Vector3.new(
