@@ -893,7 +893,7 @@ bodyGyro.P = 20000
 bodyGyro.D = 1000
 bodyGyro.Parent = base
 
-local flyingOffset = CFrame.new(5, 0, -3)
+local flyingOffset = CFrame.new(5, 0, 3)
 local groundOffset = 1.5
 
 local rayParams = RaycastParams.new()
@@ -1275,7 +1275,7 @@ bodyGyro.MaxTorque = Vector3.new(math.huge, math.huge, math.huge)
 bodyGyro.CFrame = rootPart.CFrame
 bodyGyro.Parent = base
 
-local petOffset = CFrame.new(5, -0.7, -3)
+local petOffset = CFrame.new(-5, -0.7, 3)
 
 local bobMax = 0
 local bobT = 0
