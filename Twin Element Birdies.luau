@@ -205,7 +205,6 @@ local duration = 4
 RunService.RenderStepped:Connect(function(dt)
 	animationTime += dt * animationSpeed
 
-	-- Proper loop: 4 → 0
 	if animationTime >= duration then
 		animationTime -= duration
 	end
