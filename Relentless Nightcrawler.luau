@@ -293,41 +293,51 @@ RunService.RenderStepped:Connect(function()
 	local targetCFrame = rootPart.CFrame * flyingOffset
 	local targetPos = targetCFrame.Position
 
-	local rayOrigin = Vector3.new(
-		targetPos.X,
-		targetPos.Y + 10,
-		targetPos.Z
-	)
+	local state = humanoid:GetState()
 
-	local rayDirection = Vector3.new(0, -100, 0)
-	local result = workspace:Raycast(rayOrigin, rayDirection, rayParams)
+	if state == Enum.HumanoidStateType.Running
+		or state == Enum.HumanoidStateType.RunningNoPhysics then
 
-	if result then
-		targetPos = Vector3.new(
+		local rayOrigin = Vector3.new(
 			targetPos.X,
-			result.Position.Y + groundOffset,
+			targetPos.Y + 10,
 			targetPos.Z
 		)
+
+		local rayDirection = Vector3.new(0, -100, 0)
+		local result = workspace:Raycast(rayOrigin, rayDirection, rayParams)
+
+		if result then
+			targetPos = Vector3.new(
+				targetPos.X,
+				result.Position.Y + groundOffset,
+				targetPos.Z
+			)
+		end
 	end
 
 	bodyPos.Position = targetPos
 
-local velocity = rootPart.AssemblyLinearVelocity
-local flatVelocity = Vector3.new(velocity.X, 0, velocity.Z)
+	local velocity = rootPart.AssemblyLinearVelocity
+	local flatVelocity = Vector3.new(
+		velocity.X,
+		0,
+		velocity.Z
+	)
 
-if flatVelocity.Magnitude > 1 then
-	bodyGyro.CFrame = CFrame.lookAt(
-		base.Position,
-		base.Position + flatVelocity.Unit
-	)
-else
-	bodyGyro.CFrame = CFrame.lookAt(
-		base.Position,
-		Vector3.new(
-			rootPart.Position.X,
-			base.Position.Y,
-			rootPart.Position.Z
+	if flatVelocity.Magnitude > 1 then
+		bodyGyro.CFrame = CFrame.lookAt(
+			base.Position,
+			base.Position + flatVelocity.Unit
 		)
-	)
-end
+	else
+		bodyGyro.CFrame = CFrame.lookAt(
+			base.Position,
+			Vector3.new(
+				rootPart.Position.X,
+				base.Position.Y,
+				rootPart.Position.Z
+			)
+		)
+	end
 end)
