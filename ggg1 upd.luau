@@ -1738,7 +1738,7 @@ bodyGyro.MaxTorque = Vector3.new(math.huge, math.huge, math.huge)
 bodyGyro.CFrame = rootPart.CFrame
 bodyGyro.Parent = base
 
-local flyingOffset = CFrame.new(2, 2, 5.5)
+local flyingOffset = CFrame.new(-2, 2, -5.5)
 local bobUp = false
 local bobT = 0
 local bobSpeed = 0.01
