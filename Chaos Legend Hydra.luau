@@ -5,7 +5,7 @@
 
 --[[ 
  GitHub Script Link: 
- https://raw.githubusercontent.com/Ahma174/Misc-Scripts/refs/heads/main/20Legend%20Hydra.luau
+ https://raw.githubusercontent.com/Ahma174/Misc-Scripts/refs/heads/main/Chaos%20Legend%20Hydra.luau
 ]]
 
 -- Code
