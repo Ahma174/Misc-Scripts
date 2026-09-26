@@ -2645,7 +2645,7 @@ bodyGyro.P = 20000
 bodyGyro.D = 1000
 bodyGyro.Parent = base
 
-local flyingOffset = CFrame.new(0, 2, 9)
+local flyingOffset = CFrame.new(0, -0.6, 9)
 
 RunService.RenderStepped:Connect(function()
 	local targetCFrame = rootPart.CFrame * flyingOffset
@@ -2679,4 +2679,4 @@ local function println(str)
  return print(str)
 end
 
-println("Everything is now loaded")
+println("Everything is now loaded.")
