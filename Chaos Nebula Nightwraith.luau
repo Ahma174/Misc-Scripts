@@ -1,7 +1,4 @@
---[[ 
-   the model is saved by Dex ReContinued ;) 
-   (absolute best dex project, you should try it)
-]]
+-- No ninja legends 2 labels cuz the game is down and unobtainable
 
 --[[ 
  GitHub Script Link: 
