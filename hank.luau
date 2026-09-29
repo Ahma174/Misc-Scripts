@@ -36,6 +36,7 @@ task.wait(0.05)
 
 -- Vibecoded Part --
 
+-- Compressed By Claude ofc
 local N={"RightFoot","LeftLowerArm","RightUpperArm","Head","RightHand","UpperTorso","HumanoidRootPart","RightUpperLeg","LeftUpperArm","RightLowerArm","LeftHand","LeftFoot","LowerTorso","RightLowerLeg","LeftUpperLeg","LeftLowerLeg"}
 local W={1,1,1,1,1,1,0,1,1,1,1,1,1,1,1,1}
 local P={false,false,false,false,false,false,false,false,false,false,false,true,true,false,false,false}
@@ -162,6 +163,9 @@ local D={
 {1.9833,.262,.036,-.1869,.8269,0,0,-.1026,.0335,.2428,.0538,.5057,-.0036,0,0,0,-.0516,-.008,.0035,0,0,0,.2037,.062,.1756,-.0415,-.0609,-.5168,.7722,0,0,0,0,0,.165,-.0039,.1236,.0049,-.0189,-.0152,-.0498,-.516,.0106,0,-.4126,-.0119,-.4437,0,0,.4152,.3216,-.3243,-.6302,0,0},
 {2,.2621,.0361,-.187,.8325,0,0,-.1016,.0291,.2436,.0538,.5057,-.0036,0,0,0,-.0516,-.008,.0035,0,0,0,.2051,.0617,.1783,-.0429,-.0606,-.517,.7723,0,0,0,0,0,.1651,-.0039,.1236,.0049,-.0189,-.0152,-.0498,-.516,.0106,0,-.4201,-.0184,-.4481,0,0,.4173,.3207,-.3255,-.6365,0,0}
 }
+
+-- Anim Player by ChatGPT because bro decided to adapt to it
+
 local animation = {}
 
 for keyframeIndex, keyframeData in ipairs(D) do
