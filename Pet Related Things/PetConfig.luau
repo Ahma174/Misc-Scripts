@@ -13,4 +13,11 @@ return {
         ["Advanced"] = Color3.fromRGB(0, 0, 0),
         ["Basic"] = Color3.fromRGB(0, 0, 0)
     };
+    TextColors = {
+        ["Unique"] = Color3.fromRGB(255, 255, 255),
+        ["Epic"] = Color3.fromRGB(255, 255, 255),
+        ["Rare"] = Color3.fromRGB(255, 255, 255),
+        ["Advanced"] = Color3.fromRGB(255, 255, 255),
+        ["Basic"] = Color3.fromRGB(255, 255, 255)
+    };
 };
