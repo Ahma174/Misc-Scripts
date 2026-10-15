@@ -20,4 +20,7 @@ return {
         ["Advanced"] = Color3.fromRGB(255, 255, 255),
         ["Basic"] = Color3.fromRGB(255, 255, 255)
     };
+    Evolutions = {
+        ["Evolved"] = Color3.fromRGB(170, 85, 255)
+    };
 };
