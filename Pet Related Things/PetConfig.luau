@@ -23,4 +23,5 @@ return {
     Evolutions = {
         ["Evolved"] = Color3.fromRGB(170, 85, 255)
     };
+    EvolutionStrokes = {};
 };
