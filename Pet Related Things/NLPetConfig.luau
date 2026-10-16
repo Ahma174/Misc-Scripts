@@ -1,5 +1,3 @@
--- The Long Colors Are VibeCoded BUT I modified the key names or whatever you call it heavily and reformatted it for my style
--- Most Config Tables are just useless like LabelInstances and EvolutionsShowed
 return {
     Colors = {
 	    ["Evolved"] = Color3.fromRGB(170, 85, 255),
@@ -68,36 +66,36 @@ return {
     -- Rarity Colors Arent Right Colors Some Might Be Wrong Colors
     RarityColors = {
         ["Basic"] = {
-		    Inside = Color3.fromRGB(128, 128, 128),
+		    Inside = Color3.fromRGB(181, 181, 181),
 		    Outline = Color3.fromRGB(255, 255, 255)
 	    };
 	    ["Advanced"] = {
-		    Inside = Color3.fromRGB(127, 255, 0),
+		    Inside = Color3.fromRGB(0, 255, 0),
 		    Outline = Color3.fromRGB(255, 255, 255)
     	};
 	    ["Rare"] = {
-		    Inside = Color3.fromRGB(0, 255, 255),
+		    Inside = Color3.fromRGB(0, 170, 255),
 		    Outline = Color3.fromRGB(255, 255, 255)
 	    };
 	    ["Epic"] = {
-		    Inside = Color3.fromRGB(230, 230, 250),
+		    Inside = Color3.fromRGB(170, 85, 255),
 		    Outline = Color3.fromRGB(255, 255, 255)
 	    };
     	["Unique"] = {
-	    	Inside = Color3.fromRGB(255, 165, 0),
+	    	Inside = Color3.fromRGB(255, 170, 0),
 	    	Outline = Color3.fromRGB(255, 255, 255)
     	};
 	    ["Omega"] = {
-	    	Inside = Color3.fromRGB(64, 64, 64),
-    		Outline = Color3.fromRGB(139, 0, 139)
+	    	Inside = Color3.fromRGB(0, 0, 0),
+    		Outline = Color3.fromRGB(0, 0, 0)
     	};
     	["Elite"] = {
 		    Inside = Color3.fromRGB(0, 0, 0),
-		    Outline = Color3.fromRGB(0, 0, 128)
+		    Outline = Color3.fromRGB(0, 0, 0)
 	    };
 	    ["Infinity"] = {
 	    	Inside = Color3.fromRGB(0, 0, 0),
-	    	Outline = Color3.fromRGB(255, 255, 0)
+	    	Outline = Color3.fromRGB(255, 204, 0)
 	    };
 	    ["Awakened"] = {
 	    	Inside = Color3.fromRGB(0, 0, 0),
@@ -113,23 +111,23 @@ return {
 	    };
     	["Skystorm"] = {
         	Inside = Color3.fromRGB(0, 0, 0),
-    		Outline = Color3.fromRGB(75, 0, 130)
+    		Outline = Color3.fromRGB(115, 0, 255)
     	};
     	["SoulMaster"] = {
 	    	Inside = Color3.fromRGB(0, 0, 0),
-	    	Outline = Color3.fromRGB(255, 165, 0)
+	    	Outline = Color3.fromRGB(255, 64, 0)
 	    };
 	    ["RisingHero"] = {
 		    Inside = Color3.fromRGB(0, 0, 0),
-		    Outline = Color3.fromRGB(0, 255, 0)
+		    Outline = Color3.fromRGB(85, 255, 0)
 	    };
 	    ["Q-Strike"] = {
 		    Inside = Color3.fromRGB(0, 0, 0),
-		    Outline = Color3.fromRGB(75, 0, 130)
+		    Outline = Color3.fromRGB(0, 0, 0)
 	    };
 	    ["Skyblade"] = {
-		    Inside = Color3.fromRGB(64, 64, 64),
-		    Outline = Color3.fromRGB(255, 0, 0)
+		    Inside = Color3.fromRGB(20, 20, 20),
+		    Outline = Color3.fromRGB(0, 0, 0)
 	    };
     };
     LabelInstances = {
