@@ -46,7 +46,7 @@ bodyGyro.MaxTorque = Vector3.new(math.huge, math.huge, math.huge)
 bodyGyro.CFrame = rootPart.CFrame
 bodyGyro.Parent = base
 
-local flyingOffset = _G.petFlyingOffset or CFrame.new(5, 2, -3)
+local flyingOffset = ... or _G.petFlyingOffset or CFrame.new(5, 2, -3)
 local bobUp = false
 local bobT = 0
 local bobSpeed = 0.01
