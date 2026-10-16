@@ -1,3 +1,4 @@
+-- Debug Version
 -- The Model is Saved With Dex ReContinued
 
 -- The Code Under Here
@@ -45,7 +46,7 @@ bodyGyro.MaxTorque = Vector3.new(math.huge, math.huge, math.huge)
 bodyGyro.CFrame = rootPart.CFrame
 bodyGyro.Parent = base
 
-local flyingOffset = _G.petFlyingOffset CFrame.new(5, 2, -3)
+local flyingOffset = _G.petFlyingOffset or CFrame.new(5, 2, -3)
 local bobUp = false
 local bobT = 0
 local bobSpeed = 0.01
